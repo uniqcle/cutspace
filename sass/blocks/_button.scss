@@ -1,0 +1,17 @@
+.button{
+    display: inline-block; 
+    height: 100%; 
+    width: 157px; 
+    border-radius: 29px;
+    padding-left: 37px; 
+    padding-right: 37px; 
+    font-weight: 700; 
+    line-height: 1; 
+    transition: background-color 0.5s ease-in; 
+
+    @include button($accent); 
+
+    &:hover{
+        background-color: $accent-hover; 
+    }
+}

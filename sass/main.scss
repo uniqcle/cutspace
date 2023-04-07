@@ -3,8 +3,12 @@
 @import './base/reset'; 
 @import './base/base'; 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import './base/mixins.scss'; 
 
 /* blocks */ 
 @import './blocks/nav';
 @import './blocks/logo'; 
 @import './blocks/navigation-list'; 
+@import './blocks/header'; 
+@import './blocks/form'; 
+@import './blocks/button'
