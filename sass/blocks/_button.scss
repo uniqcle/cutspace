@@ -1,7 +1,5 @@
 .button{
     display: inline-block; 
-    height: 100%; 
-    width: 157px; 
     border-radius: 29px;
     padding-left: 37px; 
     padding-right: 37px; 
@@ -9,9 +7,17 @@
     line-height: 1; 
     transition: background-color 0.5s ease-in; 
 
-    @include button($accent); 
+    @include button($accent, $height, $width); 
 
     &:hover{
         background-color: $accent-hover; 
     }
+}
+
+.object__button{
+
+    @include button($accent, 58px, 172px);
+    padding-top: 20px; 
+    margin-top: 20px; 
+
 }

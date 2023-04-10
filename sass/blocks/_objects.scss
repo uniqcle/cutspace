@@ -1,4 +1,5 @@
 .objects {
+    padding-bottom: 90px; 
 }
  
 .objects-row {
@@ -6,7 +7,19 @@
     justify-content: space-between;
     align-items: center;
 }
-.objects-img {
-}
+
 .objects-text {
+    max-width: 543px; 
+    padding-left: 181px; 
+    
+    & .objects__title{
+        margin-bottom: 20px; 
+    }
+
+    & p{
+        margin-bottom: 20px; 
+    }
+
 }
+
+

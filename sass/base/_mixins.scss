@@ -1,4 +1,7 @@
-@mixin button($color){
+@mixin button($color, $height, $width){
     background-color: $color; 
     color: $color-font; 
+    width: $width; 
+    height: $height; 
 }
+
