@@ -192,6 +192,47 @@ html, body {
   margin-top: 20px;
 }
 
+.cta__button {
+  background-color: #F78434;
+  color: #fff;
+  width: 172px;
+  height: 58px;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.cta__button--white {
+  background-color: #fff;
+  color: #fff;
+  width: 172px;
+  height: 58px;
+  color: #323232;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: color 0.2s easy-in;
+}
+.cta__button--white:hover {
+  color: #fff;
+}
+.cta__button--play {
+  padding-left: 44px;
+  position: relative;
+}
+.cta__button--play::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 22px;
+  top: 23px;
+  background-image: url("../img/dashboard/play.svg");
+  background-repeat: no-repeat;
+}
+
 .clients {
   padding-top: 100px;
   padding-bottom: 90px;
@@ -250,6 +291,11 @@ html, body {
   line-height: 1.5;
 }
 
+.cta__title {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
 .card-info {
   position: absolute;
   right: -46px;
@@ -282,6 +328,44 @@ html, body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.8px;
+}
+
+.cta {
+  padding-top: 70px;
+  padding-bottom: 140px;
+}
+
+.cta__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 95px;
+  background-color: #58BEBF;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.cta__image {
+  margin-top: 60px;
+}
+.cta__image img {
+  border: 20px solid #fff;
+  border-left: 0px;
+  border-bottom: 0px;
+  border-top-right-radius: 20px;
+}
+
+.cta__text {
+  width: 364px;
+}
+.cta__text p {
+  color: #fff;
+}
+
+.cta__buttons-row {
+  display: flex;
+  column-gap: 20px;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

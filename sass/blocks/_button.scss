@@ -21,3 +21,44 @@
     margin-top: 20px; 
 
 }
+
+.cta__button{
+    @include button($accent, 58px, 172px);
+    padding-top: 18px; 
+    padding-bottom: 16px; 
+    padding-left: 40px; 
+    padding-right: 40px;
+    
+    &--white{
+        @include button(#fff, 58px, 172px);
+        color: #323232; 
+        padding-top: 18px; 
+        padding-bottom: 16px; 
+        padding-left: 30px; 
+        padding-right: 30px;
+        transition: color 0.2s easy-in; 
+
+        &:hover{
+            color: #fff; 
+        }
+    }
+
+    &--play{
+        padding-left: 44px; 
+        position: relative; 
+
+        &::before{
+            content: ""; 
+            display: block; 
+            width: 12px; 
+            height: 12px; 
+            position: absolute; 
+            left: 22px; 
+            top: 23px; 
+            background-image: url('../img/dashboard/play.svg'); 
+            background-repeat: no-repeat; 
+        }
+    }
+
+ 
+}

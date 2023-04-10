@@ -1,0 +1,41 @@
+.cta {
+    padding-top: 70px; 
+    padding-bottom: 140px; 
+}
+
+.cta__block {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding-right: 95px; 
+    background-color: #58BEBF; 
+    border-radius: 20px; 
+    color: #fff; 
+}
+
+.cta__image {
+    margin-top: 60px; 
+
+    & img{
+        border: 20px solid #fff;
+        border-left: 0px;
+        border-bottom: 0px;
+        border-top-right-radius: 20px;
+    }
+}
+.cta__text {
+    width: 364px;
+
+    p{
+        color: #fff; 
+    }
+}
+ 
+.cta__buttons-row {
+    display: flex; 
+    column-gap: 20px; 
+
+    margin-top: 30px; 
+    
+}
+ 
