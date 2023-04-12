@@ -1,36 +1,40 @@
 .button{
     display: inline-block; 
     border-radius: 29px;
-    padding-left: 37px; 
-    padding-right: 37px; 
     font-weight: 700; 
     line-height: 1; 
     transition: background-color 0.5s ease-in; 
-
-    @include button($accent, $height, $width); 
 
     &:hover{
         background-color: $accent-hover; 
     }
 }
 
-.object__button{
+.button__subscribe{
+    @include button($accent, $color-font, $height, 158px); 
+    padding-left: 28px; 
+    padding-right: 37px; 
+    
+}
 
-    @include button($accent, 58px, 172px);
+.object__button{
+    @include button($accent, $color-font, $height, $width);
     padding-top: 20px; 
-    margin-top: 20px; 
+    padding-bottom: 16px; 
+    padding-left: 40px; 
+    padding-right: 40px;
 
 }
 
 .cta__button{
-    @include button($accent, 58px, 172px);
-    padding-top: 18px; 
+    @include button($accent, $color-font, $height, $width);
+    padding-top: 22px; 
     padding-bottom: 16px; 
     padding-left: 40px; 
     padding-right: 40px;
     
     &--white{
-        @include button(#fff, 58px, 172px);
+        @include button(#fff, $color-font, $height, $width);
         color: #323232; 
         padding-top: 18px; 
         padding-bottom: 16px; 
@@ -61,4 +65,17 @@
     }
 
  
+}
+
+.button__serve{
+    @include button($accent, $color-font, $height, $width);
+
+    padding-top: 20px; 
+    padding-bottom: 16px; 
+    padding-left: 51px; 
+    padding-right: 40px;
+
+    &:hover{
+        @include button(#fff, $accent-hover, $height, $width);
+    }
 }
