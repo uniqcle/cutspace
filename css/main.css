@@ -258,6 +258,23 @@ html, body {
   height: 58px;
 }
 
+.button__expert {
+  background-color: #fff;
+  color: #323232;
+  width: 172px;
+  height: 58px;
+  padding-top: 22px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.button__expert:hover {
+  background-color: #F78434;
+  color: #fff;
+  width: 172px;
+  height: 58px;
+}
+
 .clients {
   padding-top: 100px;
   padding-bottom: 90px;
@@ -621,6 +638,52 @@ html, body {
 }
 .testimonials__card:hover .testimonials__card-location {
   color: #F78434;
+}
+
+.expert {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  color: #fff;
+  background-image: url("../img/expert/fon.svg");
+  background-size: cover;
+  position: relative;
+}
+.expert:before {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 743px;
+  height: 372px;
+  background-image: url("../img/expert/oval.svg");
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+.expert:after {
+  position: absolute;
+  bottom: 0;
+  left: 59%;
+  content: "";
+  display: block;
+  width: 478px;
+  height: 547px;
+  background-image: url("../img/expert/girl.png");
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+
+.expert__title {
+  max-width: 359px;
+  margin-bottom: 15px;
+}
+.expert__title h2 {
+  color: #fff;
+}
+
+.expert__text {
+  max-width: 342px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */

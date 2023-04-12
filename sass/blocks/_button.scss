@@ -79,3 +79,16 @@
         @include button(#fff, $accent-hover, $height, $width);
     }
 }
+
+.button__expert{
+    @include button(#fff, #323232, $height, $width);
+
+    padding-top: 22px; 
+    padding-bottom: 16px; 
+    padding-left: 40px; 
+    padding-right: 40px;
+
+    &:hover{
+        @include button($accent, #fff, $height, $width);
+    }
+}
