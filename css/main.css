@@ -562,10 +562,14 @@ html, body {
   max-width: 350px;
   border-radius: 5px;
   overflow: hidden;
-  transition: box-shadow 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .testimonials__card:hover {
   box-shadow: 0px 10px 52px rgba(0, 0, 0, 0.08);
+}
+.testimonials__card:hover .testimonials__play-btn {
+  transform: translateY(0%);
+  opacity: 1;
 }
 
 .testimonials_img-wrapper {
@@ -579,6 +583,8 @@ html, body {
 
 .testimonials__play-btn {
   fill: #F78434;
+  transform: translateY(-50%);
+  opacity: 0;
 }
 .testimonials__play-btn circle {
   fill: #fff;
@@ -612,6 +618,9 @@ html, body {
   line-height: 1.7;
   letter-spacing: 1.15px;
   color: #58BEBF;
+}
+.testimonials__card:hover .testimonials__card-location {
+  color: #F78434;
 }
 
 /*# sourceMappingURL=main.css.map */
