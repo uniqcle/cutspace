@@ -465,4 +465,56 @@ html, body {
   color: #fff;
 }
 
+.benefits {
+  padding-bottom: 110px;
+}
+
+.benefit-heading {
+  margin-bottom: 58px;
+  text-align: center;
+}
+
+.benefit-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 35px;
+}
+
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.benefit-item__img {
+  margin-bottom: 15px;
+}
+.benefit-item__img circle {
+  fill: rgba(88, 190, 191, 0.2);
+  transition: fill 0.2s ease-in;
+}
+.benefit-item__img path {
+  fill: #58BEBF;
+  transition: fill 0.2s ease-in;
+}
+.benefit-item:hover .benefit-item__img {
+  margin-bottom: 15px;
+}
+.benefit-item:hover .benefit-item__img circle {
+  fill: #F78434;
+}
+.benefit-item:hover .benefit-item__img path {
+  fill: #fff;
+}
+
+.benefit-item__title {
+  margin-bottom: 2px;
+  font-size: 28px;
+}
+
+.benefit-item__text {
+  text-align: center;
+}
+
 /*# sourceMappingURL=main.css.map */
