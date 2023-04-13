@@ -58,6 +58,10 @@ html, body {
   width: 100%;
 }
 
+.none {
+  display: none;
+}
+
 /* blocks */
 .nav {
   padding-top: 35px;
@@ -100,6 +104,11 @@ html, body {
   font-weight: 700;
 }
 
+@media (max-width: 1000px) {
+  .navigation-list {
+    display: none;
+  }
+}
 .header__row {
   display: flex;
   justify-content: space-between;
@@ -737,6 +746,116 @@ html, body {
 
 .footer__nav-item a:hover {
   color: #F78434;
+}
+
+/* Nav Icon */
+.mobile-nav-btn {
+  --time: 0.1s;
+  --width: 40px;
+  --height: 30px;
+  --line-height: 4px;
+  --color: #ff6a00;
+  height: var(--height);
+  width: var(--width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icon {
+  position: relative;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+}
+
+.nav-icon::before,
+.nav-icon::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+  transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+}
+
+.nav-icon::before {
+  top: calc(var(--line-height) * -2);
+}
+
+.nav-icon::after {
+  top: calc(var(--line-height) * 2);
+}
+
+.nav-icon.nav-icon--active {
+  background-color: transparent;
+}
+
+.nav-icon.nav-icon--active::before,
+.nav-icon.nav-icon--active::after {
+  top: 0;
+  transition: top var(--time) linear, transform var(--time) ease-in var(--time);
+}
+
+.nav-icon.nav-icon--active::before {
+  transform: rotate(45deg);
+}
+
+.nav-icon.nav-icon--active::after {
+  transform: rotate(-45deg);
+}
+
+/* Layout */
+.mobile-nav-btn {
+  z-index: 999;
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .mobile-nav-btn {
+    display: block;
+  }
+}
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.mobile-nav {
+  padding: 40px 10px 40px 40px;
+  position: fixed;
+  top: 0;
+  right: -220px;
+  width: 220px;
+  height: 100%;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.mobile-nav__list {
+  display: grid;
+  gap: 20px;
+  text-transform: capitalize;
+  padding-top: 20px;
+}
+
+.mobile-nav--open {
+  right: 0px;
+}
+
+.mobile-nav-fade {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 29, 34, 0.7);
+  opacity: 0;
+}
+
+.mobile-nav-fade--open {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

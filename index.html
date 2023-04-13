@@ -13,6 +13,7 @@
     <nav class="nav">
         <div class="container">
             <div class="nav__row">
+
                 <div class="logo">
                     <img src="./img/icons/logo.svg" alt="logo">
                     <span>Residence Monolith</span>
@@ -26,12 +27,37 @@
                         <li><a href="#">Контакты</a></li>
                     </ul>
                 </div>
+
+
+                <button class="mobile-nav-btn">
+                    <div class="nav-icon"></div>
+                </button>
+
             </div>
         </div>
     </nav>
 
 
-    <header class="header">
+    <!-- mobile -->
+
+
+
+    <div class="mobile-nav-fade"></div>
+
+    <div class="mobile-nav ">
+        <ul class="mobile-nav__list">
+            <li><a class="active" href="#">Главная</a></li>
+            <li><a href="#">Подобрать объект</a></li>
+            <li><a href="#">restaurants</a></li>
+            <li><a href="#">Ход строительства</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+    <!-- /// mobile -->
+
+
+
+    <header class="header none">
         <div class="container">
             <div class="header__row">
                 <div class="header__text">
@@ -57,7 +83,8 @@
         </div>
     </header>
 
-    <section class="clients">
+
+    <section class="clients none">
         <div class="container">
             <div class="clients-row">
                 <img src="./img/clients/01.jpg" alt="client">
@@ -69,7 +96,7 @@
     </section>
 
 
-    <section class="objects">
+    <section class="objects none">
         <div class="container container--fluid">
             <div class="objects-row">
 
@@ -121,7 +148,7 @@
 
 
     <!-- cta -->
-    <section class="cta">
+    <section class="cta none">
         <div class="container">
             <div class="cta__block">
 
@@ -149,7 +176,7 @@
     <!-- // cta -->
 
 
-    <section class="serve">
+    <section class="serve none">
         <div class="container">
             <div class="serve__heading">
                 <h2 class="title-h2 serve_title">Лучшее предложение!</h2>
@@ -204,7 +231,7 @@
     </section>
 
     <!-- benefits -->
-    <section class="benefits">
+    <section class="benefits none">
         <div class="container">
             <div class="benefit-heading">
                 <h2 class="title-h2">Почему выбирают нас?</h2>
@@ -300,7 +327,7 @@
     </section>
 
     <!-- testimonials -->
-    <section class="testimonials">
+    <section class="testimonials none">
         <div class="container">
 
             <div class="testimonials__heading">
@@ -393,7 +420,7 @@
 
 
     <!-- expert -->
-    <section class="expert">
+    <section class="expert none">
         <div class="container">
 
             <div class="expert-info">
@@ -411,7 +438,7 @@
     </section>
 
 
-    <footer class="footer">
+    <footer class="footer none">
         <div class="container footer-row">
             <!-- footer info -->
             <div class="footer__info">
@@ -477,6 +504,7 @@
 
 
     <script src="./js/main.js"></script>
+    <script src="./js/mobile-nav.js"></script>
 </body>
 
 </html>
